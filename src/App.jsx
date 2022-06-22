@@ -1,6 +1,5 @@
 import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import './App.css';
 import ZippiaPage from './pages/ZippiaPage';
 
 function App() {
