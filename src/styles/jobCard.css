@@ -1,0 +1,13 @@
+.job-description {
+  white-space: normal;
+  width: 100%;
+  overflow: hidden;
+  max-height: 100px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  margin-top: 20px;
+}
+
+.card {
+  margin-top: 1vh;
+}
