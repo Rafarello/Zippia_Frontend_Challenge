@@ -13,7 +13,11 @@
       - [context.js](#context.js)
       - [Provider](#Provider)
   - [Pages](#pages)
-
+      - [Zippia Page](#Zippia-page)
+  - [Services](#services)
+      - [Zippia Jobs Api](#Zippia-jobs-api)
+  - [Styles](#styles)
+  - [App](#app)
 
 # Briefing
 
@@ -23,7 +27,7 @@ Among the specifications, there was the need to filter the jobs by company name,
 
 # Main tools
 
-This project was made mainly with React.js with functional components and Javascript. Some React Hooks, as useState, useEffect, useContext also have been used to assist the development.
+This project was made mainly with React.js with functional components, Javascript and Axios for fetching requests from the API. Some React Hooks, as useState, useEffect, useContext also have been used to assist the development. 
 
 # Project structure
 
@@ -89,4 +93,28 @@ This is where that is initialized the global storage of the application
 
 It is where all of the global state variables and global state dispatchs are created and manipulated, then passed to the children's elements to be used
 
-# Pages
+## Pages
+
+## Zippia Page
+
+This page represents the main and only page of the project, it uses all of the components cited above and renders inside an extra, called pagination.
+
+This pagination components controls the page of resumed jobs being showed and can be manipulated at its core to show more or less jobs at each page depending on the occasion.
+
+## Services
+
+## Zippia Jobs Api
+
+This is where all of the functions that are related to fetching information from API are stored.
+
+It exports only one function `requestJobs`, that uses the fixed payload and endpoint to retrieve the information
+
+## Styles
+
+There is nothing much to say here, but all of the CSS stylization is saved here, and each component has its own. 
+
+The display of the page and components has been mainly manipulated using Grid display
+
+## App
+
+It's where the Provider, Router and routes are implemented with its respective elements. There is also a Navigate to go to `test/jobs` from `/` because one of the specifications of this challenge was the route to be made on this one.
