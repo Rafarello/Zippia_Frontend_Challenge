@@ -123,7 +123,7 @@ It's where the Provider, Router and routes are implemented with its respective e
 
 ## How install and start the project
 
-To install and start the project, first you need to clone/fork the repository, then run npm install at the root folder of the project to install all of the dependencies and finally npm start, to let React run it's build process 
+To install and start the project, first you need to clone/fork the repository, then run npm install at the root folder of the project to install all of the dependencies, and finally npm start to let React run its build process 
 
 ## Deploy
 
