@@ -12,7 +12,7 @@ function JobCardResumed({
   const { setSelectedJob } = useContext(storage);
   const resumedDescription = Parser(jobDescription);
   return (
-    <Card id={jobId} className="card">
+    <Card id={jobId} className="card-resumed">
       <Card.Body>
         <Card.Title>
           {jobTitle}
