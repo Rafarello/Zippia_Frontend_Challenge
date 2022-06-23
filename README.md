@@ -1,4 +1,4 @@
-# Welcome to Zippia Frontend Challenge!
+# Welcome to Zippia Frontend Challenge repository!
 
 ## Summary:
 
@@ -7,6 +7,8 @@
 - [Project structure](#Project-structure)
 - [Components details](#Components-details)
   - [Header](#Header)
+      - [JobCardComplete](#Job-card-complete)
+      - [JobCardResumed](#Job-card-resumed)
 
 # Briefing
 
@@ -49,3 +51,27 @@ index.jsx
 # Components details
 
 ## Header
+
+This component has all of the available manners to control and filter the jobs being shown, it was constructed using Bootstrap's Reacts component. There are 3 distinghished dropdowns, each one having its own category and function to manipulate the global state.
+
+- Functions:
+
+`changeCompanyFilter` => Used in the Company's name dropdown and it changes the filter to only show jobs from the target company clicked.
+
+Obs: It can be restored to show jobs from all of the companies again.
+
+`changeDataFilter` => Used to change the filter which manipulates the display of jobs that has been posted on the last week and all time
+
+`changeAlphabeticFilter` => Used to change the filter for ordering the list alphabetically ascending or descending.
+
+## JobCardComplete
+
+This component represents the main content of the page, it is positioned on the left side of the page and has all of the info asked at the goals of the challenge.
+
+There are only one element of this on the page, and the job being displayed is being controlled by a global state named `selectedJob`
+
+## JobCardResumed
+
+It represents a briefly resumé of the job and is mounted inside the aside component of the page. The aside component is a list of these cards that has the resumed info 
+
+## Context
