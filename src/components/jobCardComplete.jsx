@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Parser from 'html-react-parser';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/jobCard.css';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import storage from '../context/context';
 
 function JobCardComplete() {
@@ -28,7 +28,6 @@ function JobCardComplete() {
         <Card.Text className="job-description-complete">
           {(descriptionParsed)}
         </Card.Text>
-        <Button>Show more</Button>
       </Card.Body>
     </Card>
   );
