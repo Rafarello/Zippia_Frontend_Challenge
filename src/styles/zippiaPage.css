@@ -5,20 +5,13 @@ body {
 }
 
 .main {
-  margin-top: 5vh;
+  margin-top: 0vh;
   margin-bottom: 5vh;
-  margin-left: 25vh;
-  margin-right: 25vh;
+  margin-left: 0vh;
+  margin-right: 0vh;
   display: grid;
   grid-template-columns: 6fr 11fr;
-  grid-template-rows: 5vh 95vh;
-}
-
-header {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-template-rows: 6vh 94vh;
 }
 
 aside {
@@ -26,6 +19,9 @@ aside {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  margin-left: 5vh;
+  margin-top: 1vh;
+
 }
 
 section,
@@ -34,7 +30,9 @@ section,
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  margin-left: 5vh;
+  margin-left: 2vh;
+  margin-right: 5vh;
+  margin-top: 1vh;
 }
 
 .aside {
