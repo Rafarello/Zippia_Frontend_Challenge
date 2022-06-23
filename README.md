@@ -18,6 +18,8 @@
       - [Zippia Jobs Api](#Zippia-jobs-api)
   - [Styles](#styles)
   - [App](#app)
+  - [How install and start the project](#How-install-and-start-the-project)
+  - [Deploy](#deploy)
 
 # Briefing
 
@@ -118,3 +120,11 @@ The display of the page and components has been mainly manipulated using Grid di
 ## App
 
 It's where the Provider, Router and routes are implemented with its respective elements. There is also a Navigate to go to `test/jobs` from `/` because one of the specifications of this challenge was the route to be made on this one.
+
+## How install and start the project
+
+To install and start the project, first you need to clone/fork the repository, then run npm install at the root folder of the project to install all of the dependencies and finally npm start, to let React run it's build process 
+
+## Deploy
+
+The project has been deployed on Vercel and you can visit it using this <a href="https://zippia-frontend-challenge.vercel.app/test/jobs">link</a>
