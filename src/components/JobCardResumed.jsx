@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import Parser from 'html-react-parser';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/jobCard.css';
 import { Card, Button } from 'react-bootstrap';
+import storage from '../context/context';
 
-function JobCard({
-  jobId, jobTitle, companyName, jobDescription,
+function JobCardResumed({
+  jobId, jobTitle, companyName, jobDescription, job,
 }) {
+  const { setSelectedJob } = useContext(storage);
   const resumedDescription = Parser(jobDescription);
   return (
     <Card id={jobId} className="card">
@@ -21,17 +23,23 @@ function JobCard({
         <Card.Text className="job-description">
           {resumedDescription}
         </Card.Text>
-        <Button>Show more</Button>
+        <Button onClick={() => setSelectedJob(job)}>Show more</Button>
       </Card.Body>
     </Card>
   );
 }
 
-JobCard.propTypes = {
+JobCardResumed.propTypes = {
   jobId: PropTypes.string.isRequired,
   jobTitle: PropTypes.string.isRequired,
   companyName: PropTypes.string.isRequired,
   jobDescription: PropTypes.string.isRequired,
+  job: PropTypes.shape({
+    jobId: PropTypes.string.isRequired,
+    jobTitle: PropTypes.string.isRequired,
+    companyName: PropTypes.string.isRequired,
+    jobDescription: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
-export default JobCard;
+export default JobCardResumed;
