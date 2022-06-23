@@ -5,6 +5,8 @@
 - [Briefing](#Briefing)
 - [Main tools](#Main-tools)
 - [Project structure](#Project-structure)
+- [Components details](#Components-details)
+  - [Header](#Header)
 
 # Briefing
 
@@ -18,7 +20,7 @@ This project was made mainly with React.js with functional components and Javasc
 
 # Project structure
 
-The project has been structured as the following demo shows:
+The project has been structured as the following shows:
 
 src 
   - components
@@ -43,3 +45,7 @@ src
 
 App.jsx
 index.jsx
+
+# Components details
+
+## Header
