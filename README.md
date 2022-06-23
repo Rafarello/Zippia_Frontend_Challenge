@@ -9,6 +9,11 @@
   - [Header](#Header)
       - [JobCardComplete](#Job-card-complete)
       - [JobCardResumed](#Job-card-resumed)
+  - [Context](#Context)
+      - [context.js](#context.js)
+      - [Provider](#Provider)
+  - [Pages](#pages)
+
 
 # Briefing
 
@@ -75,3 +80,13 @@ There are only one element of this on the page, and the job being displayed is b
 It represents a briefly resumé of the job and is mounted inside the aside component of the page. The aside component is a list of these cards that has the resumed info 
 
 ## Context
+
+## context.js 
+
+This is where that is initialized the global storage of the application
+
+## Provider
+
+It is where all of the global state variables and global state dispatchs are created and manipulated, then passed to the children's elements to be used
+
+# Pages
