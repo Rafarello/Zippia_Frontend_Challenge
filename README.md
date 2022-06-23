@@ -54,7 +54,7 @@ src
      - jobCard.css
      - zippiaPage.css
 
-App.jsx
+App.jsx </br>
 index.jsx
 
 # Components details
