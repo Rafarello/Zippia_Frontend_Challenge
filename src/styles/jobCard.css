@@ -12,6 +12,11 @@
   margin-top: 1vh;
 }
 
+.card-resumed {
+  margin-top: 1vh;
+  max-height: 28vh;
+}
+
 .job-description-complete {
   margin-top: 5vh;
 }
