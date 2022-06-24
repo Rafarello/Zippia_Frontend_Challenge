@@ -89,7 +89,7 @@ It represents a briefly resumé of the job and is mounted inside the aside compo
 
 ## context.js 
 
-This is where that is initialized the global storage of the application
+This is where is initialized the global storage of the application
 
 ## Provider
 
