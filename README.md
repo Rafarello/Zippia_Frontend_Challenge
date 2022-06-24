@@ -69,7 +69,7 @@ This component has all of the available manners to control and filter the jobs b
 
 `changeCompanyFilter` => Used in the Company's name dropdown and it changes the filter to only show jobs from the target company clicked.
 
-Obs: It can be restored to show jobs from all of the companies again.
+Obs: It can be restored to show jobs from all companies again.
 
 `changeDataFilter` => Used to change the filter which manipulates the display of jobs that has been posted on the last week and all time
 
